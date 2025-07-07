@@ -1,0 +1,5 @@
+@use '@/styles/mixins' as *;
+
+.splashPage {
+    @include flex-col-left(var(--section-gap));
+}

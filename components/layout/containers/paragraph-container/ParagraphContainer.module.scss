@@ -1,0 +1,10 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/functions' as *;
+
+.paragraphContainer {
+    width: 100%;
+    display: grid;
+    gap: var(--heading-paragraph-gap);
+    
+  
+}

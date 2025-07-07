@@ -1,19 +1,37 @@
 @mixin text(
-    $font-size: var(--fs-300),
-    $line-height: var(--lh-300),
-    $font-weight: var(--fw-normal),
-    $color: var(--text),
+  $font-size: var(--fs-300),
+  $line-height: var(--lh-300),
+  $font-weight: var(--fw-normal),
+  $color: var(--text)
 ) {
-    margin: var(--m-auto);
-    max-width: var(--w-para-max);
-    font-size: $font-size;
-    line-height: $line-height;
-    font-weight: $font-weight;
-    color: $color;
+  margin: var(--m-paragraph);
+  max-width: var(--w-para-max);
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
 }
 
 @mixin text-style($level) {
-    @if $level == 1 {
-        @include text;
-    }
+  @if $level == 1 {
+    @include text;
+  }
+
+  @else if $level == 2 {
+    @include text(var(--fs-200), var(--lh-200), var(--fw-light));
+  }
+
+  @else if $level == 3 {
+    @include text(var(--fs-400), var(--lh-400), var(--fw-medium));
+  }
+
+  @else if $level == 4 {
+    @include text(
+      var(--fs-300),
+      var(--lh-300),
+      var(--fw-medium),
+      var(--color-text)
+    );
+    font-style: italic;
+  }
 }

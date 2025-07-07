@@ -2,3 +2,8 @@
     --text: hsl(var(--blue-900));
     --color-text: hsl(var(--blue-800));
 }
+
+[data-theme='dark'] {
+    --text: hsl(var(--green-100));
+    --color-text: hsl(var(--green-500));
+}

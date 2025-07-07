@@ -1,0 +1,17 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/functions' as *;
+
+
+.listBoxWithIcon {
+    display: grid;
+    grid-template-columns: #{px-to-rem(64)} auto;
+    align-items: center;
+    gap: var(--element-gap-xl);
+
+    .icon {
+        width: #{px-to-rem(64)};
+        height: #{px-to-rem(64)};
+        stroke: var(--color-text);
+        fill: var(--color-text);
+    }
+}

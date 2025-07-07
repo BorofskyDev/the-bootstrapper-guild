@@ -2,13 +2,32 @@
 @use '@/styles/functions' as *;
 
 :root {
-  --heading-paragraph-gap: #{px-to-rem(28)};
+  --heading-paragraph-gap: #{px-to-rem(10)};
+
+  --paragraph-gap: #{px-to-rem(24)};
+
+  --element-gap-md: #{px-to-rem(32)};
+  --element-gap-xl: #{px-to-rem(44)};
+
+  --section-gap: #{px-to-rem(64)};
 
   @include breakpoint(md) {
-    --heading-paragraph-gap: #{px-to-rem(32)};
+    --heading-paragraph-gap: #{px-to-rem(12)};
+
+    --paragraph-gap: #{px-to-rem(28)};
+
+    --section-gap: #{px-to-rem(82)};
   }
 
   @include breakpoint(lg) {
-    --heading-paragraph-gap: #{px-to-rem(64)};
+    --heading-paragraph-gap: #{px-to-rem(14)};
+
+    --paragraph-gap: #{px-to-rem(32)};
+
+    --element-gap-md: #{px-to-rem(36)};
+
+    --element-gap-xl: #{px-to-rem(42)};
+
+    --section-gap: #{px-to-rem(120)};
   }
 }

@@ -5,12 +5,9 @@ export type TextVariant =
   | 'body'
   | 'body-sm'
   | 'body-lg'
-  | 'lead'
+  | 'emphasis'
   | 'caption'
-  | 'label'
-  | 'note'
-  | 'accent'
-  | 'error'
+
 
 interface PTextProps extends React.HTMLAttributes<HTMLParagraphElement> {
   variant?: TextVariant

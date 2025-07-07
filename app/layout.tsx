@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { atkinsonMono, atkinsonNext } from './fonts'
 import '@/styles/globals.scss'
+import { Providers } from './providers'
+import { Header } from '@/components/layout'
 
 export const metadata: Metadata = {
   title: 'The Bootstrapper Guild',
@@ -16,7 +18,10 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${atkinsonNext.variable} ${atkinsonMono.variable}`}>
-        {children}
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   )

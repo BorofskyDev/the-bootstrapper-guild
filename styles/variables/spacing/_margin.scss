@@ -1,3 +1,16 @@
+@use '@/styles/functions' as *;
+@use '@/styles/mixins' as *;
+
 :root {
-    --m-auto: 0 auto;
+  --m-auto: 0 auto;
+
+  --m-paragraph: #{px-to-rem(24)} 0;
+
+  @include breakpoint(md) {
+    --m-paragraph: #{px-to-rem(28)} 0;
+  }
+
+  @include breakpoint(lg) {
+    --m-paragraph: #{px-to-rem(32)} 0;
+  }
 }

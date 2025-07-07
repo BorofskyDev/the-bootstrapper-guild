@@ -2,7 +2,8 @@
 @use '@/styles/functions' as *;
 
 .heroSection {
-    @include flex-center(column, var(--heading-paragraph-gap));
+  @include flex-center(column, var(--heading-paragraph-gap));
+  
   .heading {
     position: relative;
   }
