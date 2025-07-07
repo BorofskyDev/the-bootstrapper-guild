@@ -1,0 +1,5 @@
+@use '@/styles/functions' as *;
+
+:root {
+    --w-max: #{px-to-rem(1280)}; 
+}

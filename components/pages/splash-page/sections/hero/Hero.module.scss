@@ -1,0 +1,20 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/functions' as *;
+
+.heroSection {
+    @include flex-center(column, var(--heading-paragraph-gap));
+  .heading {
+    position: relative;
+  }
+
+  .icon {
+    position: absolute;
+    bottom: #{px-to-em(24)};
+    left: #{px-to-em(240)};
+    width: var(--fs-900);
+    height: var(--fs-900);
+    stroke: var(--color-text);
+    fill: var(--color-text);
+    transform: rotate(-45deg);
+  }
+}

@@ -1,0 +1,8 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/functions' as *;
+
+.text {
+    &__body {
+        @include text-style(1);
+    }
+}

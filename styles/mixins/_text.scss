@@ -1,0 +1,19 @@
+@mixin text(
+    $font-size: var(--fs-300),
+    $line-height: var(--lh-300),
+    $font-weight: var(--fw-normal),
+    $color: var(--text),
+) {
+    margin: var(--m-auto);
+    max-width: var(--w-para-max);
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    color: $color;
+}
+
+@mixin text-style($level) {
+    @if $level == 1 {
+        @include text;
+    }
+}

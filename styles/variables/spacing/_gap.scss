@@ -1,0 +1,14 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/functions' as *;
+
+:root {
+  --heading-paragraph-gap: #{px-to-rem(28)};
+
+  @include breakpoint(md) {
+    --heading-paragraph-gap: #{px-to-rem(32)};
+  }
+
+  @include breakpoint(lg) {
+    --heading-paragraph-gap: #{px-to-rem(64)};
+  }
+}

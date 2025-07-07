@@ -1,0 +1,12 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/functions' as *;
+
+.heading {
+    &--page {
+        @include heading(1);
+    }
+
+    &--section {
+        @include heading(2);
+    }
+}

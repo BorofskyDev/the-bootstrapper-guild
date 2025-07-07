@@ -1,0 +1,14 @@
+@use '@/styles/functions' as *;
+@use '@/styles/mixins' as *;
+
+:root {
+  --p-page: #{px-to-rem(24)} #{px-to-rem(44)};
+
+  @include breakpoint(md) {
+    --p-page: #{px-to-rem(32)} #{px-to-rem(64)};
+  }
+
+  @include breakpoint(lg) {
+    --p-page: #{px-to-rem(64)} #{px-to-rem(220)};
+  }
+}

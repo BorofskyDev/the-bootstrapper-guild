@@ -9,5 +9,5 @@ export const PageContainer: React.FC<PageContainerProps> = ({
   children,
   className,
 }) => {
-  return <main className={`${styles.container} ${className}`}>{children}</main>
+  return <main className={`${styles.pageContainer} ${className}`}>{children}</main>
 }

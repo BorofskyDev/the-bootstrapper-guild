@@ -1,0 +1,8 @@
+@use '@/styles/functions' as *;
+@use '@/styles/mixins' as *;
+
+.pageContainer {
+  height: 100dvh;
+  max-width: var(--w-max);
+  padding: var(--p-page);
+}
