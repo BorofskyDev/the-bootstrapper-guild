@@ -1,0 +1,21 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/functions' as *;
+
+.mobileNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--bg-main);
+    z-index: 10;
+    overflow-y: auto;
+    
+
+    & .links {
+        @include flex-center(column, var(--element-gap-xl));
+        height: 100%;
+        width: 100%;
+
+    }
+}

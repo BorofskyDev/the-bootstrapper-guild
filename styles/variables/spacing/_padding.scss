@@ -4,11 +4,15 @@
 :root {
   --p-page: #{px-to-rem(24)} #{px-to-rem(44)};
 
+  --p-btn-lg: #{px-to-rem(6)} #{px-to-rem(16)};
+
   @include breakpoint(md) {
     --p-page: #{px-to-rem(32)} #{px-to-rem(64)};
+    --p-btn-lg: #{px-to-rem(8)} #{px-to-rem(24)};
   }
 
   @include breakpoint(lg) {
     --p-page: #{px-to-rem(64)} #{px-to-rem(220)};
+    --p-btn-lg: #{px-to-rem(12)} #{px-to-rem(32)};
   }
 }

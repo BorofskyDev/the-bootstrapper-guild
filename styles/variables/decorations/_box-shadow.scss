@@ -1,0 +1,9 @@
+@use '@/styles/functions' as *;
+@use '@/styles/mixins' as *;
+
+:root {
+  --shadow-2: #{px-to-rem(2)} #{px-to-rem(2)} 0 #000;
+  --shadow-4: #{px-to-rem(4)} #{px-to-rem(4)} 0 #000;
+  --shadow-6: #{px-to-rem(6)} #{px-to-rem(6)} 0 #000;
+  --shadow-8: #{px-to-rem(8)} #{px-to-rem(8)} 0 #000;
+}

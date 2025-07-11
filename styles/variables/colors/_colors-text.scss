@@ -1,9 +1,15 @@
 :root {
     --text: hsl(var(--blue-900));
     --color-text: hsl(var(--blue-800));
+    --alt-text: hsl(var(--blue-100));
+    --link-text: hsl(var(--blue-600));
+    --link-text-hover: hsl(var(--blue-800));
 }
 
 [data-theme='dark'] {
     --text: hsl(var(--green-100));
     --color-text: hsl(var(--green-500));
+    --alt-text: hsl(var(--green-900));
+    --link-text: hsl(var(--green-300));
+    --link-text-hover: hsl(var(--green-100));
 }

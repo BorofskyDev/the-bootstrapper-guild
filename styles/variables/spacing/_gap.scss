@@ -6,6 +6,7 @@
 
   --paragraph-gap: #{px-to-rem(24)};
 
+  --element-gap-sm: #{px-to-rem(16)};
   --element-gap-md: #{px-to-rem(32)};
   --element-gap-xl: #{px-to-rem(44)};
 
@@ -24,6 +25,7 @@
 
     --paragraph-gap: #{px-to-rem(32)};
 
+    --element-gap-sm: #{px-to-rem(24)};
     --element-gap-md: #{px-to-rem(36)};
 
     --element-gap-xl: #{px-to-rem(42)};

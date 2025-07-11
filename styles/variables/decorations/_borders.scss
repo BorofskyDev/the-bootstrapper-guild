@@ -1,0 +1,6 @@
+@use '@/styles/functions' as *;
+
+:root { 
+    --border-2: #{px-to-rem(2)} solid var(--color-border-primary);
+    
+}

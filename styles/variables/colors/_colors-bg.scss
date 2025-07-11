@@ -1,7 +1,13 @@
 :root {
     --bg-main: hsl(var(--blue-100));
+
+    --bg-secondary: hsl(var(--blue-600));
+
+    
 }
 
 [data-theme='dark'] {
     --bg-main: hsl(var(--green-900));
+
+    --bg-secondary: hsl(var(--green-500));
 }

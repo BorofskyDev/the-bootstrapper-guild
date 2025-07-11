@@ -1,0 +1,9 @@
+@use '@/styles/functions' as *;
+@use '@/styles/mixins' as *;
+
+:root {
+    --br-2: #{px-to-rem(2)};
+    --br-4: #{px-to-rem(4)};
+    --br-6: #{px-to-rem(6)};
+    --br-8: #{px-to-rem(8)};
+}

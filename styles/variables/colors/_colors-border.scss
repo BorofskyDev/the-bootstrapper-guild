@@ -1,0 +1,8 @@
+:root { 
+
+    --color-border-primary: hsl(var(--blue-600));
+}
+
+[data-theme='dark'] {
+    --color-border-primary: hsl(var(--green-500));
+}

@@ -1,0 +1,65 @@
+@use '@/styles/functions' as *;
+@use '@/styles/mixins' as *;
+
+.textLink {
+  position: relative;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-bold);
+  color: var(--link-text);
+  transition: var(--transition-main);
+  @include flex-center(row, var(--element-gap-sm));
+
+  &:focus-visible {
+    @include focused;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--link-text-hover);
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: #{px-to-rem(1)};
+    background-color: var(--link-text);
+    transition: var(--transition-main);
+  }
+
+  &:hover::before,
+  &:focus-visible::before,
+  &:hover::after,
+  &:focus-visible::after {
+    background-color: var(--link-text-hover);
+  }
+
+  &::before {
+    bottom: -#{px-to-rem(4)};
+    left: 0;
+  }
+
+  &::after {
+    top: #{px-to-rem(4)};
+    opacity: 0;
+    right: 150%;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    right: 0;
+    opacity: 1;
+  }
+
+  & svg {
+    position: absolute;
+    top: 0;
+    right: -#{px-to-rem(16)};
+    width: #{px-to-rem(16)};
+    height: #{px-to-rem(16)};
+    margin-left: var(--element-gap-sm);
+    fill: var(--link-text);
+    transition: var(--transition-main);
+  }
+}

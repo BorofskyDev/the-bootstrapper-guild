@@ -1,0 +1,27 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/functions' as *;
+
+.header {
+  position: relative;
+  max-width: var(--w-max);
+  padding: var(--p-page);
+  margin: var(--m-auto);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+
+  & .right {
+    @include breakpoint(lg) {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+
+  // @include breakpoint(lg) {
+  //     display: flex;
+  //     justify-content: space-between;
+  //     align-content: center;
+  // }
+}
