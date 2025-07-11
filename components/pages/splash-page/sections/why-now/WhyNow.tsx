@@ -4,7 +4,12 @@ import gondor from '@/public/images/white_tree.jpg'
 
 export function WhyNowSection() {
   return (
-    <ParagraphContainer id='why-now' title='why now?'>
+    <ParagraphContainer
+      id='why-now'
+      text1="seizing tomorrow's opportunities, today!"
+      text2="it's the last good chance to start"
+      icon='fight'
+    >
       <PText>
         Looking at the market, AI is eating up the low-end. VCs are strip-mining
         the high-end. Tech jobs are drying up and the few that remain often have

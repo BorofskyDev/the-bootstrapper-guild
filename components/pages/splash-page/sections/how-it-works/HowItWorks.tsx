@@ -3,7 +3,12 @@ import { PText } from '@/components/ui'
 
 export function HowItWorksSection() {
   return (
-    <ParagraphContainer id='how-it-works' title='how it works'>
+    <ParagraphContainer
+      id='how-it-works'
+      text1='streamlining collaboration at scale'
+      text2='if it works, it works'
+      icon='teamwork'
+    >
       <PText>
         Honestly, we don&apos;t really know where we&apos;re going, but we have
         ideas.

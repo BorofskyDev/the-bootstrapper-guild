@@ -20,7 +20,10 @@ export function HeroSection() {
 
       <ParagraphContainer
         id='deshitification'
-        title='the deshitification of tech'
+        text1='optimizing the human experience'
+        text2='the enshittification of life'
+        icon='shit'
+        viewBox='0 0 80 80'
       >
         <PText>&quot;Tech is broken.&quot;</PText>
         <PText>

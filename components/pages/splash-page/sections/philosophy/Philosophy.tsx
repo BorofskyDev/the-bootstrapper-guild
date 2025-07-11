@@ -5,7 +5,9 @@ import styles from './Philosophy.module.scss'
 export function PhilosophySection() {
   return (
     <ParagraphContainer
-      title='our philosophy'
+      text1='Rethinking the way we work'
+      text2='we weren&apos;t made for this'
+      icon='pain'
       id='philosophy'
       className={styles.philosophySection}
     >

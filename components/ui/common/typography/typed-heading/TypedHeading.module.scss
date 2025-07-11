@@ -1,0 +1,22 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/functions' as *;
+
+.heading {
+  &--page {
+    @include heading(1);
+  }
+
+  &--section {
+    @include heading(2);
+  }
+}
+
+.typedIconWrapper {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.5ch;
+
+  svg {
+    display: block;
+  }
+}

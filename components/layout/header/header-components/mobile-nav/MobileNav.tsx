@@ -20,7 +20,7 @@ export function MobileNav({ onLinkClick, className }: MobileNavProps) {
     >
       <div className={styles.links}>
         {navLinks.map(({ href, label }) => (
-          <TextLink key={href} external href={href} onClick={onLinkClick}>
+          <TextLink key={href} href={href} onClick={onLinkClick}>
             {label}
           </TextLink>
         ))}
